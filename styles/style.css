@@ -295,10 +295,10 @@
     max-inline-size: 364px;
   }
 
-  .page {
+  /* .page {
     padding-inline: 20px;
     gap: 60px;
-  }
+  } */
 
   .content {
     gap: 80px;
