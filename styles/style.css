@@ -8,11 +8,10 @@
   background-color: var(--body-background-color);
   background-size: cover;
   background-repeat: no-repeat;
-  
+
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
 }
 
 /* Стили шапки */
@@ -151,7 +150,7 @@
 
 /* стили основновного контента (текст) */
 
-.main{
+.main {
   padding-inline: 10px;
 }
 
@@ -266,21 +265,29 @@
 }
 
 @media (width >= 768px) {
-  .header__decoration {
-    top: 20px;
-  }
-
-  .decorated-zone::before {
-    top: 20px;
-  }
-
-  .decorated-zone::after {
-    bottom: 20px;
+  .page {
+    gap: 60px;
   }
 
   .header {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-inline: 20px;
+  }
+
+  .header__decoration {
+    top: 20px;
+    right: 29px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu-list {
@@ -301,10 +308,9 @@
     max-inline-size: 364px;
   }
 
-  /* .page {
+  .main {
     padding-inline: 20px;
-    gap: 60px;
-  } */
+  }
 
   .content {
     gap: 80px;
@@ -370,6 +376,10 @@
   .item5 {
     grid-column: 2 / 4;
     grid-row: 4;
+  }
+
+  .footer {
+    padding-inline: 20px;
   }
 }
 
