@@ -24,6 +24,7 @@
   min-block-size: 668px;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-inline: 10px;
 }
 
 .decorated-zone {
@@ -150,6 +151,10 @@
 
 /* стили основновного контента (текст) */
 
+.main{
+  padding-inline: 10px;
+}
+
 .link {
   text-decoration: none;
   text-shadow: 2px 2px var(--accent-color);
@@ -245,6 +250,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-inline: 10px;
 }
 
 .footer-title {
