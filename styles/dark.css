@@ -24,3 +24,7 @@
   --card-text-color: #f1b2ce;
   --section-title-text-color: #ff0070;
 }
+
+:root.theme-dark .header__decoration {
+  display: block;
+}

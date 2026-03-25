@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   line-height: 25px;
   color: var(--accent-color);
@@ -96,19 +96,19 @@
 
 .header__theme-menu-button {
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   line-height: 18px;
   color: var(--button-color);
   text-transform: lowercase;
   background-color: transparent;
-  border-color: var(--button-color);
+
   border-width: 0px;
   width: 70px;
   height: 26px;
 }
 .header__theme-menu-button:hover {
-  border: 1px solid var(--button-color);
+  border: 1px solid var(--button-border-color);
 }
 .header__theme-menu-button:focus-visible {
   outline: none;
@@ -124,7 +124,7 @@
   justify-self: center;
   align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   line-height: 83%;
   color: var(--decor-text-color);
@@ -137,7 +137,7 @@
   align-self: center;
   justify-self: center;
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   line-height: 23.4px;
   max-inline-size: 355px;
@@ -186,17 +186,22 @@
   gap: 20px;
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .card__title {
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   line-height: 23.4px;
-  margin-bottom: 10px;
 }
 
 .section__title {
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   line-height: 23.4px;
   color: var(--section-title-text-color);
@@ -207,20 +212,14 @@
 
 .card__text {
   font-size: 18px;
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
   line-height: 23.4px;
   color: var(--card-text-color);
 }
 
 .card__subtitle {
-  font-size: 18px;
-  font-family: IBM Plex Mono;
   font-weight: 400;
-  line-height: 23.4px;
-  color: var(--title-text-color);
-  background-color: var(--title-background-color);
-  margin-bottom: 10px;
 }
 
 /* Стили галлереи */
@@ -256,7 +255,7 @@
   justify-self: center;
   align-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-family: IBM Plex Mono;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 700;
   line-height: 83%;
   color: var(--decor-text-color);
@@ -345,7 +344,7 @@
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat (4, 1fr);
+    grid-template-rows: min-content;
     gap: 20px;
   }
   .title-gallery {
@@ -397,12 +396,15 @@
   }
 
   .header__title {
-    font-size: 157px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__text {
-    max-block-size: 71px;
     max-inline-size: 491px;
+  }
+
+  .section {
+    grid-template-columns: 1fr 2.06fr;
   }
 
   .section__low-concentrate > .section__list {
@@ -410,6 +412,6 @@
   }
 
   .footer-title {
-    font-size: 157px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }

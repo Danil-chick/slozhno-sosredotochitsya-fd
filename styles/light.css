@@ -18,13 +18,14 @@
 
   --accent-color: #ff8dcb;
   --button-color: #353430;
+  --button-border-color: rgba(53, 52, 48, 0.4);
 
   --card-text-color: #353430;
   --section-title-text-color: #353430;
+}
 
-  .header__decoration {
-    display: none;
-  }
+:root.theme-light .header__decoration {
+  display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,14 +39,15 @@
 
     --accent-color: #ff8dcb;
     --button-color: #353430;
+    --button-border-color: rgba(53, 52, 48, 0.4);
 
     --card-text-color: #353430;
     --section-title-text-color: #353430;
     .header__decoration {
       display: none;
     }
-    /* Дублируем только те же переменные, что и выше */
+    :root .header__decoration {
+      display: none;
+    }
   }
-
-  /* Остальные стили, только при необходимости */
 }
